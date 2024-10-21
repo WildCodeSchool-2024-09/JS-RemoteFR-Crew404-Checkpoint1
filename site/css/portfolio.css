@@ -61,6 +61,13 @@ p {
   background-color: var(--lightWildColor);
 }
 
+#modify {
+  border: solid;
+  padding: 0.5em;
+  background-color: #f593a4;
+  border-radius: 0.5em;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
