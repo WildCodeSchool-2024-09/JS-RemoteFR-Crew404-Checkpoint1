@@ -28,6 +28,7 @@ p {
   margin-bottom: var(--gutter);
 }
 
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -108,3 +109,46 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/* REPONSIVE 700 px */
+
+
+@media screen and (min-width: 700px) {
+
+header nav  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: grid;
+  justify-items: center ;
+  }
+
+.skills {
+  display:flex;
+  align-items: flex-start; 
+}
+  
+.skills--title {
+  text-align: center;
+}
+
+  
+}
+
+
+
+
+/*REPONSIVE -700 px */
+
+@media screen and (max-width: 700px) {
+
+  .desktop {
+    display: none;
+  }
+
+}
+
+
+
