@@ -138,6 +138,15 @@ p {
     width:50%;
   }
 
+  .thirdbanner{
+    text-align: center;
+  }
+
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /*responsive mobile*/
