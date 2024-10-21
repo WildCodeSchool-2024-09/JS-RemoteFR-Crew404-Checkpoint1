@@ -5,7 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test:1": "jest algo/1",
+  //   function findAngle (angle1, angle2) {
+  //     let angle3 = 180 - (angle1 + angle2);
+  //     return angle3;
+  //  }
+    
+  // let angle1 = 100;
+  // let angle2 = 50;
+  // console.log(findAngle(angle1, angle2));
+    
     "test:2": "jest algo/2",
+  //   function isLeapYear(year) {
+  //     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+  //         return true; 
+  //     } else {
+  //         return false; 
+  //     }
+  // }
+  
+  console.log(isLeapYear(2004));
     "test:3": "jest algo/3",
     "test:4": "jest algo/4",
     "test:5": "jest algo/5",
