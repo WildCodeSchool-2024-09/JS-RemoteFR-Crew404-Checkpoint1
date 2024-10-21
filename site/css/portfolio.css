@@ -136,7 +136,12 @@ header nav  {
   justify-content: center;
   flex-direction: row-reverse;
 }
-  
+
+.projects {
+  display: flex;
+
+}
+
 
 }
 
