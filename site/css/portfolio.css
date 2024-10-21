@@ -113,6 +113,16 @@ p {
   opacity: 50%;
 }
 
+.js-button {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: rgb(250, 192, 216);
+  border: solid 1px rgb(255, 233, 242);
+  color: white;
+}
+
+/* RESPONSIVE */
+
 @media screen and (min-width: 700px) {
   nav {
     display: flex;
