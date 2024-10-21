@@ -38,6 +38,24 @@ nav {
   margin-bottom: var(--gutter);
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: 700px) {
+  align-items: center;
+  }
+}
+
+.title>h2 {
+  padding: 0em 1em 0em 1em;
+}
+
+.title>p {
+  padding: 0em 1.5em 0em 1.5em;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
