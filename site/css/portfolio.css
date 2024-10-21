@@ -143,6 +143,37 @@ LE CSS DU BG Derrick
 	opacity: 0.4;
 }
 
+.projects {
+	text-align: center;
+}
+
+.box {
+	width: auto;
+}
+
+.box:nth-child(1) {
+	grid-area: kybercore;
+}
+
+.box:nth-child(2) {
+	grid-area: basin;
+}
+
+.box:nth-child(3) {
+	grid-area: ylbuilders;
+}
+
+.box:nth-child(4) {
+	grid-area: dovetail;
+}
+
+.allBox {
+	display: grid;
+	grid-template-areas:
+		"kybercore basin ylbuilders"
+		". dovetail .";
+}
+
 @media screen and (max-width: 700px) {
 	.title {
 		margin-bottom: 2rem;
@@ -152,5 +183,13 @@ LE CSS DU BG Derrick
 	}
 	.skills {
 		flex-direction: column-reverse;
+	}
+
+	.allBox {
+		grid-template-areas:
+			"kybercore"
+			"basin"
+			"ylbuilders"
+			"dovetail";
 	}
 }
