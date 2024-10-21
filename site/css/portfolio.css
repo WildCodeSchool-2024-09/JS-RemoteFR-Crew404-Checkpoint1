@@ -129,15 +129,6 @@ LE CSS DU BG Derrick
 	justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-	.title {
-		margin-bottom: 2rem;
-	}
-	.desktop {
-		display: none;
-	}
-}
-
 .skills {
 	display: flex;
 	justify-content: center;
@@ -146,4 +137,16 @@ LE CSS DU BG Derrick
 
 .column {
 	flex: 1;
+}
+
+@media screen and (max-width: 700px) {
+	.title {
+		margin-bottom: 2rem;
+	}
+	.desktop {
+		display: none;
+	}
+	.skills {
+		flex-direction: column-reverse;
+	}
 }
