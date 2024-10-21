@@ -23,15 +23,35 @@ p {
   padding: 0 var(--gutter);
 }
 
+
+.nav {
+  @media screen and (min-width:700px) {
+  display: flex;
+  justify-content: space-between;
+  }
+}
+
+
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  @media screen and (max-width:700px) {
+    display: none;
+  }
 }
 
 .description {
@@ -51,16 +71,29 @@ p {
   background-color: var(--lightWildColor);
 }
 
-.skills {
-  margin-top: calc(var(--gutter) * -2);
-  border-radius: var(--radius);
-  padding: 0 10%;
-}
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  @media screen and (min-width:700px) {
+    text-align: center;
+    margin-top: 2em;
+  }
 }
+
+
+.skills {
+  margin-top: calc(var(--gutter) * -2);
+  border-radius: var(--radius);
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  @media screen and (min-width:700px) {
+  flex-direction: row-reverse;
+  }
+}
+
 
 .column {
   border-left: var(--styledBorder);
@@ -71,6 +104,10 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  @media screen and (min-width:700px) {
+    margin-top: 5em;
+    width: 35%;
+  }
 }
 
 .column:first-of-type {
@@ -96,8 +133,23 @@ p {
   color: var(--purple);
 }
 
+.titleProjects {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:700px) {
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+
 .box {
-  width: 25%;
+  width: 70%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
