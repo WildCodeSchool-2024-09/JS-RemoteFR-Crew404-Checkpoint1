@@ -128,3 +128,12 @@ LE CSS DU BG Derrick
 	align-items: center;
 	justify-content: center;
 }
+
+@media screen and (max-width: 700px) {
+	.title {
+		margin-bottom: 2rem;
+	}
+	.desktop {
+		display: none;
+	}
+}
