@@ -21,7 +21,12 @@ avatar.addEventListener("click", () => {
  /*JS Etape 2 changer le nom*/
 function firstNamePrompt() {
 let firstName = document.getElementById("firstname");
+let color = document.querySelector(".pink-bg");
+let button = document.querySelector(".firstname");
 firstName.textContent = prompt("Enter your name");
+let colorPrompt = prompt("Enter a color")
+color.style.backgroundColor = colorPrompt
+button.style.backgroundColor = colorPrompt
 }
 
 const nameButton = document.querySelector(".firstname")
