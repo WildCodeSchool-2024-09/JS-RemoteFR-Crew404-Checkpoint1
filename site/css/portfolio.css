@@ -1,3 +1,4 @@
+
 :root {
   --radius: 12px;
 
@@ -107,4 +108,75 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+
+/*Code de julie css*/
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  
+  @media (max-width: 700px) 
+  
+  {
+    display: none;
+  }
+}
+
+.skills {
+
+  
+  margin-left: -100px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 80px;
+
+  @media (max-width: 700px) 
+  
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+}
+.column {
+  width: 500px;
+  height: 500px;
+
+  @media (max-width: 700px) 
+  
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+.skills--title {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
