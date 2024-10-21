@@ -6,13 +6,20 @@ bannerImg.addEventListener('click', () => {
 
   const firstname = document.querySelector('#firstname');
   const modifyButton = document.querySelector('#modify');
-  const descriptionBG = document.querySelector('.pink-bg');
-  
+  const sectionColor = document.querySelectorAll('.pink-bg');
+  const textColor = document.querySelectorAll('.pink-text');
+
   modifyButton.addEventListener('click', () => {
-    let userName = prompt("Enter your name");
+    const userName = prompt("Enter your name");
     firstname.innerHTML = userName;
     firstname.style.color = "white";
-    let changeBG = prompt("Enter a color");
-    descriptionBG.style.backgroundColor = changeBG;
+    const changeColor = prompt("Enter a color");
+    for (let element of sectionColor) {
+        element.style.backgroundColor = changeColor;
+      }
+
+    for (let element of textColor) {
+        element.style.color = changeColor;
+      }
   });
 
