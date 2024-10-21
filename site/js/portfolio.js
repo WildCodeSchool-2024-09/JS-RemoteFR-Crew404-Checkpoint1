@@ -13,6 +13,10 @@ const button = document.createElement("button");
 const wraper = document.querySelector(".button")
 button.textContent = "Modify name and color"
 wraper.appendChild(button);
+button.style.color = "White";
+button.style.backgroundColor = "#cd5870";
+button.style.borderColor = "white"
+button.style.padding = "1rem";
 
 
 button.addEventListener('click', function () {
