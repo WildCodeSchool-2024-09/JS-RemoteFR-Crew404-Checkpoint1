@@ -26,7 +26,24 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+	// Your code here !
+	const seniors = [];
+
+	// - Le premier contient uniquement des devs web seniors
+	seniors.push(
+		persons.filter(
+			(person) => person.experience >= 5 && person.job === "web dev"
+		)
+	);
+
+	// - Le second ne contient que des data analysts seniors
+	seniors.push(
+		persons.filter(
+			(person) => person.experience >= 5 && person.job === "data analyst"
+		)
+	);
+
+	return seniors;
 }
 
 module.exports = findSeniors;
