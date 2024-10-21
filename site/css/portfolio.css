@@ -139,6 +139,10 @@ LE CSS DU BG Derrick
 	flex: 1;
 }
 
+.disabled {
+	opacity: 0.4;
+}
+
 @media screen and (max-width: 700px) {
 	.title {
 		margin-bottom: 2rem;
