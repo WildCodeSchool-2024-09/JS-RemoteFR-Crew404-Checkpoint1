@@ -38,3 +38,18 @@ BUTTON_NAME.addEventListener("click", () => {
 	// 	BG.style.backgroundColor = COLOR;
 	// }
 });
+
+// récuperer
+const TOOLS = document.querySelector("#modifyTools");
+const FRONT_DEV = document.querySelectorAll("#front-dev-tools li");
+
+// ajout d'un écouteur d'event
+TOOLS.addEventListener("click", () => {
+	const tools = ["Github", "VSCode", "Terminal"];
+
+	for (let i = 0; i < FRONT_DEV.length; i++) {
+		FRONT_DEV[i].textContent = tools[i];
+	}
+});
+
+// modifier

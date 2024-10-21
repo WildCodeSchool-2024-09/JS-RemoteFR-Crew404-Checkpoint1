@@ -174,7 +174,8 @@ LE CSS DU BG Derrick
 		". dovetail .";
 }
 
-#modifyName {
+#modifyName,
+#modifyTools {
 	border: solid;
 	padding: 1.2rem;
 	color: white;
