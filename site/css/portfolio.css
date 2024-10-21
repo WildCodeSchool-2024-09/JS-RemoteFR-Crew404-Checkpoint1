@@ -121,6 +121,22 @@ p {
   color: white;
 }
 
+.list-button {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: rgb(250, 192, 216);
+  border: solid 1px rgb(255, 233, 242);
+  color: white;
+}
+
+#form-button {
+  padding: 0.2em;
+  border-radius: 5px;
+  background-color: rgb(250, 192, 216);
+  border: solid 1px rgb(255, 233, 242);
+  color: white;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 700px) {
@@ -163,5 +179,11 @@ p {
   .skills-line {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #top-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
