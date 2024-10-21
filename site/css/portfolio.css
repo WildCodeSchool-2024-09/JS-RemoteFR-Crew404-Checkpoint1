@@ -121,3 +121,10 @@ LE CSS DU BG Derrick
 		justify-content: space-between;
 	}
 }
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
