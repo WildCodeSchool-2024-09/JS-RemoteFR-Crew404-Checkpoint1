@@ -113,6 +113,10 @@ p {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -120,6 +124,12 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+
+    /* @media screen and (min-width:700px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    } */
 }
 
 .purple-text {
