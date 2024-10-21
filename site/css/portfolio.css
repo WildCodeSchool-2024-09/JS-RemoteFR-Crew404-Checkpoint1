@@ -110,7 +110,7 @@ p {
   color: var(--purple);
 }
 
-/* REPONSIVE 700 px */
+/* REPONSIVE Desktop */
 
 
 @media screen and (min-width: 700px) {
@@ -127,20 +127,14 @@ header nav  {
 
 .skills {
   display:flex;
-  align-items: flex-start; 
+  justify-content: center;
 }
   
-.skills--title {
-  text-align: center;
-}
 
-  
 }
 
 
-
-
-/*REPONSIVE -700 px */
+/*REPONSIVE mobile */
 
 @media screen and (max-width: 700px) {
 
@@ -148,6 +142,10 @@ header nav  {
     display: none;
   }
 
+  .skills {
+    display:flex;
+    flex-direction: column;
+  }
 }
 
 
