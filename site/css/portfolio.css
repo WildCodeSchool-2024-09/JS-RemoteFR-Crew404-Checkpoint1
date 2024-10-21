@@ -23,6 +23,12 @@ p {
   padding: 0 var(--gutter);
 }
 
+.topPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);

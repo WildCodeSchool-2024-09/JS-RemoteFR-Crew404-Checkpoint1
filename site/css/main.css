@@ -31,6 +31,10 @@ body {
 header nav {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+
+  @media screen and (min-width:700px) {
+  justify-content: space-between;
+  }
 }
 
 header nav img {
