@@ -110,6 +110,12 @@ p {
   color: var(--purple);
 }
 
+.disabled
+{
+  opacity: 0.3;
+}
+
+
 /* REPONSIVE Desktop */
 
 
