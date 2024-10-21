@@ -10,13 +10,12 @@ IMG.addEventListener("click", () => {
 const BUTTON_NAME = document.querySelector("#modifyName");
 const FIRSTNAME = document.querySelector("#firstname");
 const PINK_BGS = document.querySelectorAll(".pink-bg");
-
-console.log(PINK_BGS);
+const PINK_TXT = document.querySelectorAll(".pink-text");
 
 // #750ff7
 BUTTON_NAME.addEventListener("click", () => {
-	const NAME = prompt("New name 💃");
 	const COLOR = prompt("New color (hex only)", "#750ff7");
+	const NAME = prompt("New name 💃");
 
 	FIRSTNAME.style.color = "white";
 	FIRSTNAME.textContent = NAME;
@@ -24,6 +23,10 @@ BUTTON_NAME.addEventListener("click", () => {
 	PINK_BGS.forEach((element) => {
 		element.style.backgroundColor = COLOR;
 	});
+
+	for (const TEXT of PINK_TXT) {
+		TEXT.style.color = COLOR;
+	}
 
 	/** Une autre version d'une boucle */
 	// for (const BG of PINK_BGS) {

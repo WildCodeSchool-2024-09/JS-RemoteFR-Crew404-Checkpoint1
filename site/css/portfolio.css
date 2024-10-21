@@ -177,7 +177,6 @@ LE CSS DU BG Derrick
 #modifyName {
 	border: solid;
 	padding: 1.2rem;
-	background-color: var(--lightWildColor);
 	color: white;
 	border-radius: 0.5em;
 }
