@@ -8,3 +8,19 @@ avatar.addEventListener("click", function () {
         }
     }
 )
+
+const button = document.createElement("button");
+const wraper = document.querySelector(".button")
+button.textContent = "Modify name and color"
+wraper.appendChild(button);
+
+
+button.addEventListener('click', function () {
+    const firstName = prompt("Whats' your name ?");
+    const wraperName = document.getElementById('firstname');
+    return ((wraperName.textContent = firstName) && (wraperName.style.color = "White")) ;
+});
+
+
+
+
