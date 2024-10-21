@@ -137,3 +137,13 @@ LE CSS DU BG Derrick
 		display: none;
 	}
 }
+
+.skills {
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex: 1;
+}
