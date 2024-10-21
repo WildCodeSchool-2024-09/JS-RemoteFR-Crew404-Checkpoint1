@@ -119,15 +119,28 @@ p {
   color: var(--purple);
 }
 
+/*responsive desktop*/
 @media screen and (min-width:700px) {
   .firstbanner{
     align-items: center;
   }
+
+  .columns{
+    display: flex;
+    padding: 0;
+  }
+
+  .column{
+    width:50%;
+  }
+
 }
 
+
+
+/*responsive mobile*/
 @media screen and (max-width:700px) {
   .desktop img{
     display:none;
   }
-  
 }
