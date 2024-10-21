@@ -28,6 +28,16 @@ p {
   margin-bottom: var(--gutter);
 }
 
+.firstbanner{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.firstbanner img{
+  max-width:max-content;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -107,4 +117,10 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width:700px) {
+  .firstbanner{
+    align-items: center;
+  }
 }
