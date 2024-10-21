@@ -18,7 +18,18 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+	// Your code here !
+	const seats = [];
+
+	// je dois boucler sur toutes les colonnes.
+	for (let i = 0; i < 26; i++) {
+		const row = [];
+		for (let j = 0; j < 100; j++) {
+			row.push(`${i + 1}-${j + 1}`);
+		}
+		seats.push(row);
+	}
+	return seats;
 }
 
 module.exports = theaterSieges;
