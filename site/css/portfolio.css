@@ -103,8 +103,18 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+
 }
 
 .purple-text {
   color: var(--purple);
+}
+/* my code */
+.first_container {
+  border: 1px solid black;
+  
+}
+.container_image {
+  display: flex;
+  gap: 100px;
 }
