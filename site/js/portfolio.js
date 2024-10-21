@@ -47,9 +47,24 @@ const FRONT_DEV = document.querySelectorAll("#front-dev-tools li");
 TOOLS.addEventListener("click", () => {
 	const tools = ["Github", "VSCode", "Terminal"];
 
+	// modifier
 	for (let i = 0; i < FRONT_DEV.length; i++) {
 		FRONT_DEV[i].textContent = tools[i];
 	}
 });
 
-// modifier
+// recuperer
+
+const FORM = document.querySelector("form");
+const LIST_BACK = document.querySelector("#back-dev-tools");
+const INPUT = document.querySelector("#backTool");
+
+FORM.addEventListener("submit", (event) => {
+	event.preventDefault();
+
+	const LI = document.createElement("li");
+	LI.textContent = INPUT.value;
+
+	LIST_BACK.appendChild(LI);
+	INPUT.value = "";
+});

@@ -175,7 +175,8 @@ LE CSS DU BG Derrick
 }
 
 #modifyName,
-#modifyTools {
+#modifyTools,
+#sendTool {
 	border: solid;
 	padding: 1.2rem;
 	color: white;
