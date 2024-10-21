@@ -127,7 +127,7 @@ p {
 
   .columns{
     display: flex;
-    padding: 0;
+    flex-direction: row-reverse;
   }
 
   .column{
@@ -146,6 +146,4 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
-
-  )
 }
