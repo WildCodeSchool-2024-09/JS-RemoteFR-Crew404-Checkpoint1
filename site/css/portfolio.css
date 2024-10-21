@@ -115,6 +115,10 @@ p {
   box-shadow: var(--styledShadow);
 }
 
+.disabled{
+  opacity:25%;
+}
+
 .purple-text {
   color: var(--purple);
 }
@@ -145,5 +149,9 @@ p {
   .columns{
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .box{
+    width: fit-content;
   }
 }
