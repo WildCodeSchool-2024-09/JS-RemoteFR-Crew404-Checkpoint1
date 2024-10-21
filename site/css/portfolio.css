@@ -97,15 +97,21 @@ nav {
   }
 }
 
+.skills--title {
+  @media (min-width: 700px) {
+    display: none; 
+  }
+}
+
 .column1 {
-  order: 1;
+  order: 2;
   @media (max-width: 700px) {
      order: 2;
   }
 }
 
 .column2 {
-  order: 2;
+  order: 1;
   @media (max-width: 700px) {
      order: 1;
   }
