@@ -15,6 +15,25 @@ img {
   max-width: 100%;
 }
 
+header nav {
+  @media screen and (min-width: 700px) {
+    justify-content: space-between;
+    
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 700px) {
+    align-items: center;
+  }
+}
+
+#avatar{
+  width: 14em;
+}
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -29,9 +48,16 @@ p {
 }
 
 .desktop {
+  display: flex;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  @media screen and (min-width: 700px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 699px) {
+    display: none;
+  }
 }
 
 .description {
@@ -60,6 +86,18 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  color: var(--light);
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 2.5em;
+  @media screen and (min-width: 700px) {
+    justify-content: center;
+    flex-direction: row-reverse;
+    
+  }
 }
 
 .column {
@@ -71,6 +109,12 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  @media screen and (min-width: 965px) {
+  min-width: 30em;
+  }
+  @media screen and (max-width: 965px) {
+    min-width: 20em;
+    }
 }
 
 .column:first-of-type {
@@ -107,4 +151,14 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
