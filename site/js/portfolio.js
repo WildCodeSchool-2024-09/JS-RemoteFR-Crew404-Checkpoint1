@@ -10,9 +10,9 @@ avatar.addEventListener("click", function () {
 )
 
 const button = document.createElement("button");
-const wraper = document.querySelector(".button")
+const wrapper = document.querySelector(".button")
 button.textContent = "Modify name and color"
-wraper.appendChild(button);
+wrapper.appendChild(button);
 button.style.color = "White";
 button.style.backgroundColor = "#cd5870";
 button.style.borderColor = "white"
@@ -20,9 +20,13 @@ button.style.padding = "1rem";
 
 
 button.addEventListener('click', function () {
-    const firstName = prompt("Whats' your name ?");
-    const wraperName = document.getElementById('firstname');
-    return ((wraperName.textContent = firstName) && (wraperName.style.color = "White")) ;
+    const firstName = prompt("What's your name ?");
+    const wrapperName = document.getElementById('firstname');
+    const background = document.querySelector('.background');
+    const bgColor = prompt("Which background color ?");
+    wrapperName.textContent = firstName
+    wrapperName.style.color = "white"
+    background.style.backgroundColor = bgColor;
 });
 
 
