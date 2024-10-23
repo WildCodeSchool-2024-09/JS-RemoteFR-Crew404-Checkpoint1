@@ -22,7 +22,8 @@ button.style.padding = "1rem";
 //récupération des conteneurs
 const wrapperName = document.getElementById('firstname');
 const backgrounds = document.querySelectorAll('.pink-bg');
-const texts=document.querySelectorAll('.pink-text')
+const texts = document.querySelectorAll('.pink-text')
+const liens = document.querySelectorAll('a');
 //Evenements au clic
 button.addEventListener('click', function () {
     const firstName = prompt("What's your name ?"); //Prénom en blanc
@@ -33,10 +34,16 @@ button.addEventListener('click', function () {
     for (const bg of backgrounds) {
         bg.style.background = bgColor;
     }
+
     button.style.background = bgColor;
+
     for (const txt of texts) {
         txt.style.color = bgColor;
         
+    }
+
+    for (const lien of liens) {
+        lien.style.color = bgColor;
     }
     
 });
